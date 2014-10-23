@@ -59,9 +59,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GPMS.Core.IRepositories\GPMS.Core.IRepositories.csproj">
+      <Project>{042092FF-6CF3-4848-B285-3F6FCEA62BFF}</Project>
+      <Name>GPMS.Core.IRepositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPMS.Core.IServices\GPMS.Core.IServices.csproj">
+      <Project>{534B7783-04CF-45BA-8234-2560F6FFEF31}</Project>
+      <Name>GPMS.Core.IServices</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GPMS.Core.Mapping\GPMS.Core.Mapping.csproj">
       <Project>{76bd5aa7-d6b6-4a32-ac0e-3d91fdd83194}</Project>
       <Name>GPMS.Core.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPMS.Core.Repositories\GPMS.Core.Repositories.csproj">
+      <Project>{688F1F2F-358E-488F-AA2B-CD6712FA51FB}</Project>
+      <Name>GPMS.Core.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPMS.Core.Services\GPMS.Core.Services.csproj">
+      <Project>{AF29A4CF-0E43-49DA-AD4F-144C079A1D3D}</Project>
+      <Name>GPMS.Core.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

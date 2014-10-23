@@ -1,5 +1,9 @@
 ﻿using Castle.MicroKernel.Registration;
 using Castle.Windsor;
+using GPMS.Core.IRepositories;
+using GPMS.Core.IServices;
+using GPMS.Core.Repositories;
+using GPMS.Core.Services;
 using NHibernate;
 
 namespace GPMS.Core.Setting
@@ -27,6 +31,19 @@ namespace GPMS.Core.Setting
         /// <param name="container"></param>
         private void RegisterRepositories(IWindsorContainer container)
         {
+            //系统配置
+            container.Register(
+                Component.For<ISystemConfigRepository>()
+                .ImplementedBy<SystemConfigRepository>()
+                .LifeStyle.PerWebRequest
+                );
+
+            //用户
+            container.Register(
+                Component.For<IUserRepository>()
+                .ImplementedBy<UserRepository>()
+                .LifeStyle.PerWebRequest
+                );
         }
 
         /// <summary>
@@ -35,6 +52,19 @@ namespace GPMS.Core.Setting
         /// <param name="container"></param>
         private void RegisterSerives(IWindsorContainer container)
         {
+            //系统配置
+            container.Register(
+                Component.For<ISystemConfigService>()
+                .ImplementedBy<SystemConfigService>()
+                .LifeStyle.PerWebRequest
+                );
+
+            //用户
+            container.Register(
+                Component.For<IUserService>()
+                    .ImplementedBy<UserService>()
+                    .LifeStyle.PerWebRequest
+                );
         }
     }
 }
