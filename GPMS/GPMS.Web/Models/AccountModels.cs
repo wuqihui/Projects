@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Globalization;
 using System.Web.Security;
+using System.Web.UI.WebControls;
 
 namespace GPMS.Web.Models
 {
@@ -44,7 +45,7 @@ namespace GPMS.Web.Models
         public string OldPassword { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "{0} 必须至少包含 {2} 个字符。", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "{0} 必须至少{2}-18位。", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "新密码")]
         public string NewPassword { get; set; }
@@ -55,13 +56,18 @@ namespace GPMS.Web.Models
         public string ConfirmPassword { get; set; }
     }
 
+    /// <summary>
+    /// 登录的model
+    /// </summary>
     public class LoginModel
     {
-        [Required]
+        [Required(ErrorMessage = "*用户名必填字段")]
+        [StringLength(18, ErrorMessage = "{0}必须是{2}-{1}位字符", MinimumLength = 6)]
         [Display(Name = "用户名")]
         public string UserName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "*密码必填字段")]
+        [StringLength(18, ErrorMessage = "{0}必须是{2}-{1}位字符", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "密码")]
         public string Password { get; set; }
