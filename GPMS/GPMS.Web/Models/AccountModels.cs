@@ -37,6 +37,20 @@ namespace GPMS.Web.Models
         public string ExternalLoginData { get; set; }
     }
 
+    public class AccountBaseModel
+    {
+        [Required(ErrorMessage = @"*用户名必填字段")]
+        [StringLength(18, ErrorMessage = @"{0}必须是{2}-{1}位字符", MinimumLength = 6)]
+        [Display(Name = @"用户名")]
+        public string UserName { get; set; }
+
+        [Required(ErrorMessage = @"*密码必填字段")]
+        [StringLength(18, ErrorMessage = @"{0}必须是{2}-{1}位字符", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        [Display(Name = @"密码")]
+        public string Password { get; set; }
+    }
+
     public class LocalPasswordModel
     {
         [Required]
@@ -59,39 +73,24 @@ namespace GPMS.Web.Models
     /// <summary>
     /// 登录的model
     /// </summary>
-    public class LoginModel
+    public class LoginModel : AccountBaseModel
     {
-        [Required(ErrorMessage = "*用户名必填字段")]
-        [StringLength(18, ErrorMessage = "{0}必须是{2}-{1}位字符", MinimumLength = 6)]
-        [Display(Name = "用户名")]
-        public string UserName { get; set; }
-
-        [Required(ErrorMessage = "*密码必填字段")]
-        [StringLength(18, ErrorMessage = "{0}必须是{2}-{1}位字符", MinimumLength = 6)]
-        [DataType(DataType.Password)]
-        [Display(Name = "密码")]
-        public string Password { get; set; }
-
         [Display(Name = "记住我?")]
         public bool RememberMe { get; set; }
     }
 
-    public class RegisterModel
+    public class RegisterModel:AccountBaseModel
     {
-        [Required]
-        [Display(Name = "用户名")]
-        public string UserName { get; set; }
-
-        [Required]
-        [StringLength(100, ErrorMessage = "{0} 必须至少包含 {2} 个字符。", MinimumLength = 6)]
-        [DataType(DataType.Password)]
-        [Display(Name = "密码")]
-        public string Password { get; set; }
-
         [DataType(DataType.Password)]
         [Display(Name = "确认密码")]
         [Compare("Password", ErrorMessage = "密码和确认密码不匹配。")]
+        [Required(ErrorMessage = "确认密码必填字段")]
         public string ConfirmPassword { get; set; }
+
+         [Required(ErrorMessage = "邮箱地址必填字段")]
+        [DataType(DataType.EmailAddress)]
+        [Display(Name = "邮箱地址")]
+        public string EmailAddress { get; set; }
     }
 
     public class ExternalLogin

@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Transactions;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using DotNetOpenAuth.AspNet;
-using Microsoft.Web.WebPages.OAuth;
-using WebMatrix.WebData;
+using GPMS.Core.WebData;
 using GPMS.Web.Filters;
 using GPMS.Web.Models;
+using Microsoft.Web.WebPages.OAuth;
 
 namespace GPMS.Web.Controllers
 {
-    [Authorize]
-    [InitializeSimpleMembership]
+    [AuthFilterAttributer]
     public class AccountController : Controller
     {
         //
@@ -22,7 +20,7 @@ namespace GPMS.Web.Controllers
 
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
-        {
+        { 
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
@@ -35,13 +33,14 @@ namespace GPMS.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModel model, string returnUrl)
         {
-            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+            string errorMsg = string.Empty;
+            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password,ref errorMsg, persistCookie: model.RememberMe))
             {
                 return RedirectToLocal(returnUrl);
             }
 
             // 如果我们进行到这一步时某个地方出错，则重新显示表单
-            ModelState.AddModelError("", "提供的用户名或密码不正确。");
+            ModelState.AddModelError("errorMsg", errorMsg);
             return View(model);
         }
 
@@ -79,13 +78,14 @@ namespace GPMS.Web.Controllers
                 // 尝试注册用户
                 try
                 {
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
-                    WebSecurity.Login(model.UserName, model.Password);
+                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password,model.EmailAddress);
+                    string errorMsg = string.Empty;
+                    WebSecurity.Login(model.UserName, model.Password, ref errorMsg);
                     return RedirectToAction("Index", "Home");
                 }
                 catch (MembershipCreateUserException e)
                 {
-                    ModelState.AddModelError("", ErrorCodeToString(e.StatusCode));
+                    ModelState.AddModelError("errorMsg", ErrorCodeToString(e.StatusCode));
                 }
             }
 
@@ -109,7 +109,7 @@ namespace GPMS.Web.Controllers
                 // 使用事务来防止用户删除其上次使用的登录凭据
                 using (var scope = new TransactionScope(TransactionScopeOption.Required, new TransactionOptions { IsolationLevel = IsolationLevel.Serializable }))
                 {
-                    bool hasLocalAccount = OAuthWebSecurity.HasLocalAccount(WebSecurity.GetUserId(User.Identity.Name));
+                    bool hasLocalAccount = false;// OAuthWebSecurity.HasLocalAccount(WebSecurity.GetUserId(User.Identity.Name));
                     if (hasLocalAccount || OAuthWebSecurity.GetAccountsFromUserName(User.Identity.Name).Count > 1)
                     {
                         OAuthWebSecurity.DeleteAccount(provider, providerUserId);
@@ -186,7 +186,7 @@ namespace GPMS.Web.Controllers
                 {
                     try
                     {
-                        WebSecurity.CreateAccount(User.Identity.Name, model.NewPassword);
+                        //WebSecurity.CreateAccount(User.Identity.Name, model.NewPassword);
                         return RedirectToAction("Manage", new { Message = ManageMessageId.SetPasswordSuccess });
                     }
                     catch (Exception)

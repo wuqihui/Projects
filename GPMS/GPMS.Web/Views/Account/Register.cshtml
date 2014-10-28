@@ -2,36 +2,40 @@
 @{
     ViewBag.Title = "注册";
 }
-
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>新建帐户。</h2>
-</hgroup>
-
-@using (Html.BeginForm()) {
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary()
-
-    <fieldset>
-        <legend>注册表单</legend>
-        <ol>
-            <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.ConfirmPassword)
-                @Html.PasswordFor(m => m.ConfirmPassword)
-            </li>
-        </ol>
-        <input type="submit" value="注册" />
-    </fieldset>
-}
+<div class="loginRegister_box">
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @id = "register_form", @class = "form-horizontal", @role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="top_b">注册新用户</div>
+        <div style="padding-left: 15%">@Html.ValidationMessage("errorMsg")</div>
+        <div class="cnt_b">
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "用户名（6-18位数字、字母或者汉字的组合）" })
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", @placeholder = "邮箱地址", @type = "email" })
+                @Html.ValidationMessageFor(m => m.EmailAddress)
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Password, new { @class = "form-control", @placeholder = "密码（6-16位数字、字母或符合的组合）", @type = "Password" })
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "确认密码", @type = "Password" })
+                @Html.ValidationMessageFor(m => m.ConfirmPassword)
+            </div>
+            <div class="form-group">
+                <button type="submit" class="login_register_btn">同意协议并注册</button>
+            </div>
+            <div class="form-group">
+                已有帐号， @Html.ActionLink("去登录", "Login", "Account")&nbsp;@*@Html.ActionLink("返回", "Index", "Home")*@
+            </div>
+        </div>
+    }
+</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/Accounthelper")
 }
