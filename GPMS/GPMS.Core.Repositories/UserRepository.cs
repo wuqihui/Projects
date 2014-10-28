@@ -14,7 +14,7 @@ namespace GPMS.Core.Repositories
         }
 
         public User FindUserByName(string userName)
-        {
+        { 
             return _session.Query<User>().FirstOrDefault(x => x.UserName.Equals(userName));
         }
     }

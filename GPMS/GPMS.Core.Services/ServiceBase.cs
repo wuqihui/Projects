@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using GPMS.Core.IRepositories;
 using GPMS.Core.IServices;
 
@@ -33,9 +35,19 @@ namespace GPMS.Core.Services
             return _repository.GetEntityByID(id);
         }
 
+        public T GetEntityByAction(Expression<Func<T, bool>> func)
+        {
+            return _repository.GetEntityByAction(func);
+        }
+
         public IList<T> FindAllEntityList()
         {
             return _repository.FindAllEntityList();
+        }
+
+        public IList<T> FindAllEntityListByAction(Expression<Func<T, bool>> func)
+        {
+            return _repository.FindAllEntityListByAction(func);
         }
     }
 }
