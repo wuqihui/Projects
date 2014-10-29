@@ -1,0 +1,7 @@
+﻿@{Layout = "~/Views/Shared/_Layout.cshtml";}
+@section Styles{@RenderSection("Styles", required: false)}
+@Html.Partial("_Navigation")
+<div class="container">
+    @RenderBody()
+</div>
+@RenderSection("Scripts", required: false)

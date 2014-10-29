@@ -10,7 +10,8 @@ namespace GPMS.Web
         {
             //注册js
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/bootstrap.js"));
 
             //MVC验证，依赖jquery.validate.unobtrusive，在model实体添加Atrributte
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(                     
