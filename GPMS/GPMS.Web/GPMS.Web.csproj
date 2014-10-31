@@ -265,6 +265,8 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Shared\_LayoutWithNavigation.cshtml" />
     <Content Include="Views\Shared\_Navigation.cshtml" />
+    <Content Include="Views\Shared\_LayoutWithHeadAndFooter.cshtml" />
+    <Content Include="Views\Shared\_FooterPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GPMS.Core.Entities\GPMS.Core.Entities.csproj">

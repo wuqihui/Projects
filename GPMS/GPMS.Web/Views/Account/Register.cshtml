@@ -1,6 +1,8 @@
 ﻿@model GPMS.Web.Models.RegisterModel
 @{
     ViewBag.Title = "注册";
+
+    Layout = "~/Views/Shared/_LayoutWithNavigation.cshtml";
 }
 <div class="loginRegister_box">
     @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @id = "register_form", @class = "form-horizontal", @role = "form" }))

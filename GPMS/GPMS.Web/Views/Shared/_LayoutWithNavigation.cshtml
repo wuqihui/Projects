@@ -1,7 +1,11 @@
-﻿@{Layout = "~/Views/Shared/_Layout.cshtml";}
+﻿@{Layout = "~/Views/Shared/_LayoutWithHeadAndFooter.cshtml";}
 @section Styles{@RenderSection("Styles", required: false)}
-@Html.Partial("_Navigation")
+@section Header
+{
+    @Html.Partial("_Navigation")
+}
 <div class="container">
     @RenderBody()
 </div>
 @RenderSection("Scripts", required: false)
+ 

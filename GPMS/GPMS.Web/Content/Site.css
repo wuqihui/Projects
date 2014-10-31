@@ -1,74 +1,66 @@
-﻿html,
-body {
-    height: 100%;
+﻿html,body {
+    height: 100%;/*这里要高度100%,否则下面的.content-wrapper的100%不起作用*/
+    padding: 0px;
+    margin: 0px;
     /* The html and body elements cannot have any padding or margin. */
+    
 }
-body a {
-        outline: none;
-        blr: expression(this.onFocus=this.blur());
-    }
-
-header, footer, hgroup,
-nav, section {
-    display: block;
-}
-
 .content-wrapper {
     margin: 0 auto;
-    /*max-width: 960px;限定宽度，去掉*/
+    min-height: 100%;
+    position: relative;
+    /*这里外层相对定位，内层页脚绝对定位*/
+}
+.content {
+    padding: 80px;/*这里中间内容要距离上部有个距离，否则中间的内容被上部挡住*/
+}
+/*页头样式begin*/
+.navbar-header .logo {
+    /*background: url(http://res.jisuanke.com/img/logo/logo.svg) 20px 0 no-repeat;*/
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    display: block;
+}
+/*页头样式begin*/
+
+
+/*页脚样式begin*/
+.cushion{
+  padding-bottom:188px;
+}
+.footer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    bottom: 0;
+    left: 0;
+    background: #11354b;
+    border-top: 1px solid #0d2838;
+    color: #777;
 }
 
-header .content-wrapper {
-    padding-top: 20px;
+.footer-logo{
+  /*background: url(http://res.jisuanke.com/img/logo/logo-footer.svg) no-repeat;*/
+  height: 48px;
+  width: 48px;
+  margin:0 auto;
 }
-
-.float-left {
-    float: left;
-    margin-left: 5px;
+.footer-links {
+  color: #7196b7;
+  margin: 10px auto;
+  padding-left: 0;
 }
-
-.float-right {
-    float: right;
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
 }
-
-.field-validation-error {
-    color: red;
+.footer-links li:first-child {
+  padding-left: 0;
 }
-/* site title
-----------------------------------------------------------Begin*/
-.site-title {
-    color: #c8c8c8;
-    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
-    font-size: 2.3em;
-    margin: 0;
-}
-
-    .site-title a, .site-title a:hover, .site-title a:active {
-        background: none;
-        color: #c8c8c8;
-        outline: none;
-        text-decoration: none;
-    }
-/* site title
-----------------------------------------------------------End*/
-#body {
-    clear: both;
-    padding-bottom: 35px;
-}
-/* login
-----------------------------------------------------------Begin*/
-/* loginForm
-----------------------------------------------------------Begin*/
-/* login page */
-.login_page {
-    overflow: auto;
-}
-
-    .login_page body {
-        height: 100%;
-        max-width: inherit;
-        margin: 0 20px;
-    }
+/*页脚样式end*/
 
 .loginRegister_box {
     position: relative;
@@ -110,7 +102,7 @@ header .content-wrapper {
     .login_register_btn:hover {
         background: #FF9900;
     }
-
+    
 .top_b {
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
     font: 100 18px/42px 'PT Sans', sans-serif;
@@ -133,64 +125,6 @@ header .content-wrapper {
     width: 66%;
     margin: 0 auto;
 }
-
-.links_b {
-    width: 100%;
-    font-size: 11px;
-    text-align: center;
-    position: absolute;
-    bottom: -24px;
-}
-
-.link_reg {
-    font-size: 11px;
-    padding: 5px 0 0;
-    display: block;
-}
-
-.alert-login {
-    margin: 10px 10px 0;
-}
-/* loginForm
-----------------------------------------------------------End*/
-/* login
-----------------------------------------------------------end*/
-
-/*---------------------注册--------------------------------------*/
-
-
-ul, li {
-    list-style: none;
-}
-
-.panel-group a {
-    text-decoration: none;
-}
-
-
-.panel-heading .nav-header {
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: -10px;
-    margin-top: -10px;
-    border-left: none;
-    color: #333;
-    display: block;
-    background: #efeff0;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efeff0), color-stop(1, #ffffff));
-    background: -ms-linear-gradient(bottom, #efeff0, #ffffff);
-    background: -moz-linear-gradient(center bottom, #efeff0 0%, #ffffff 100%);
-    background: -o-linear-gradient(bottom, #efeff0, #ffffff);
-    filter: progid:dximagetransform.microsoft.gradient(startColorStr='#4d5b76', EndColorStr='#6c7a95');
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff',EndColorStr='#efeff0')";
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 2.5em;
-    text-shadow: none;
-    text-transform: none;
-    color: inherit;
-}
-
-.nav-header.glyphicon-chevron-up {
-    float: right;
+.field-validation-error {
+    color: red;
 }
