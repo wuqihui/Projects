@@ -1,0 +1,129 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>About - 我的 ASP.NET MVC 应用程序</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <style type="text/css">
+        html,body {
+            height: 100%;
+        }
+         .content-wrapper {
+             margin: 0 auto;
+             min-height: 100%;
+             position: relative;
+             /*这里外层相对定位，内层页脚绝对定位*/
+         }
+
+        /*页头样式begin*/
+        .navbar-header .logo {
+            /*background: url(http://res.jisuanke.com/img/logo/logo.svg) 20px 0 no-repeat;*/
+            width: 200px;
+            height: 60px;
+            margin-top: 10px;
+            display: block;
+        }
+        /*页头样式begin*/
+
+
+        /*页脚样式begin*/
+        .cushion {
+            padding-bottom: 188px;
+        }
+
+        .footer {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            bottom: 0;
+            left: 0;
+            background: #11354b;
+            border-top: 1px solid #0d2838;
+            color: #777;
+        }
+
+        .footer-logo {
+            /*background: url(http://res.jisuanke.com/img/logo/logo-footer.svg) no-repeat;*/
+            height: 48px;
+            width: 48px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            color: #7196b7;
+            margin: 10px auto;
+            padding-left: 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            padding: 0 2px;
+        }
+
+        .footer-links li:first-child {
+            padding-left: 0;
+        }
+    /*页脚样式end*/
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- Static navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="logo" href="/?Length=4" id="logo"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello, world!</h1>
+                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+            </div>
+        </div>
+        <div class="cushion"></div>
+        <div class="footer">
+            <div class="container">
+
+                <div class="row">
+                    <ul class="footer-links">
+                        <li><a href="#" target="_blank">关于<span class="hidden-xs">我们</span></a></li>
+                        <li class="muted">&middot;</li>
+                        <li><a href="#" target="_blank"><span class="hidden-xs">官方</span>博客</a></li>
+                        <li class="muted">&middot;</li>
+                        <li><a href="#" target="_blank"><span class="hidden-xs">关注</span>微博</a></li>
+                        <li class="muted">&middot;</li>
+                        <li><a href="#" target="_blank"><span class="hidden-xs">用前</span>必读</a></li>
+                        <li class="muted">&middot;</li>
+                        <li><a href="#" target="_blank">隐私<span class="hidden-xs">协议</span></a></li>
+                    </ul>
+                    <div class="footer-logo">
+                    </div>
+                    <ul class="footer-links">
+                        <li>&copy; 2014 itwocx</li>
+                        <li class="muted">&middot;</li>
+                        <li>京ICP备5号</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
