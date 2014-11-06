@@ -14,13 +14,13 @@ namespace GPMS.Web
                         "~/Scripts/bootstrap.js"));
 
             //MVC验证，依赖jquery.validate.unobtrusive，在model实体添加Atrributte
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(                     
+            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            
+
             // 这里利用unobtrusive所以不需要这里用jquery.validate了
             //"~/Scripts/CustomerJs/jquery.validate.Messages_cn.js"));
-            
+
             bundles.Add(new ScriptBundle("~/bundles/Accounthelper").Include("~/Scripts/CustomerJs/Accounthelper.js"));
 
             // 使用要用于开发和学习的 Modernizr 的开发版本。然后，当你做好
@@ -29,8 +29,8 @@ namespace GPMS.Web
                         "~/Scripts/modernizr-*"));
 
             //注册CSS
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css",
-                "~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/bootstrap.css", "~/Content/site.css"));
 
         }
     }

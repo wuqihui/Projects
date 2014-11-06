@@ -1,18 +1,19 @@
-﻿html,body {
-    height: 100%;/*这里要高度100%,否则下面的.content-wrapper的100%不起作用*/
+﻿html, body {
+    height: 100%; /*这里要高度100%,否则下面的.content-wrapper的100%不起作用*/
     padding: 0px;
     margin: 0px;
     /* The html and body elements cannot have any padding or margin. */
-    
 }
+
 .content-wrapper {
     margin: 0 auto;
     min-height: 100%;
     position: relative;
     /*这里外层相对定位，内层页脚绝对定位*/
 }
+
 .content {
-    padding: 80px;/*这里中间内容要距离上部有个距离，否则中间的内容被上部挡住*/
+    padding: 80px; /*这里中间内容要距离上部有个距离，否则中间的内容被上部挡住*/
 }
 /*页头样式begin*/
 .navbar-header .logo {
@@ -26,9 +27,10 @@
 
 
 /*页脚样式begin*/
-.cushion{
-  padding-bottom:188px;
+.cushion {
+    padding-bottom: 188px;
 }
+
 .footer {
     width: 100%;
     position: absolute;
@@ -42,31 +44,35 @@
     color: #777;
 }
 
-.footer-logo{
-  /*background: url(http://res.jisuanke.com/img/logo/logo-footer.svg) no-repeat;*/
-  height: 48px;
-  width: 48px;
-  margin:0 auto;
+.footer-logo {
+    /*background: url(http://res.jisuanke.com/img/logo/logo-footer.svg) no-repeat;*/
+    height: 48px;
+    width: 48px;
+    margin: 0 auto;
 }
+
 .footer-links {
-  color: #7196b7;
-  margin: 10px auto;
-  padding-left: 0;
+    color: #7196b7;
+    margin: 10px auto;
+    padding-left: 0;
 }
-.footer-links li {
-  display: inline;
-  padding: 0 2px;
-}
-.footer-links li:first-child {
-  padding-left: 0;
-}
+
+    .footer-links li {
+        display: inline;
+        padding: 0 2px;
+    }
+
+        .footer-links li:first-child {
+            padding-left: 0;
+        }
 /*页脚样式end*/
 
 .loginRegister_box {
-    position: relative;
-    top: 50%;
+    position: absolute; /*这个属性是设置div以绝对位置显示*/
+    top: 50%; /*<!--在离顶部50%的位置显示-->*/
+    left: 50%;
+    margin: -200px 0 0 -200px; /*在不设置这个属性的时候,这个div的x坐标为内容显示部分的50%，y坐标为内容显示部分的50%，显示出来的然而这样的话只能 说这个div的起点是在正中间，我们需要的是将整个div显示在正中间,所以给margin-left:-150px;(这里的150是从width属性 中得来的它是等于width的一半,对应的margin-top也是通过通样的方法得来的。)这样就会把整个div的宽度分一半到左边就可以让其水平居中 了，在设置margin-top:-100px;是同样的道理，会将整个div的高度分一半到上面显示。就形成了整个div在浏览器的正中间显示。*/
     width: 480px;
-    margin: 0 auto 24px;
     background: #fff;
     border: 1px solid #ccc;
     -webkit-border-radius: 6px;
@@ -102,7 +108,7 @@
     .login_register_btn:hover {
         background: #FF9900;
     }
-    
+
 .top_b {
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
     font: 100 18px/42px 'PT Sans', sans-serif;
@@ -125,6 +131,13 @@
     width: 66%;
     margin: 0 auto;
 }
+
 .field-validation-error {
     color: red;
 }
+.input-icon{ top: 0px;}
+
+/*重写了导航条的高度*/
+.navbar-nav > li > a {
+    padding-top: 25px; 
+  }
