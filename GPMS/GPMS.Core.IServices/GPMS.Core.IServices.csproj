@@ -30,6 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ICarouselService.cs" />
+    <Compile Include="IFileInfoService.cs" />
     <Compile Include="IServiceBase.cs" />
     <Compile Include="ISystemConfigService.cs" />
     <Compile Include="IUserService.cs" />

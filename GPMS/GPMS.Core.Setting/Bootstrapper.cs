@@ -44,6 +44,18 @@ namespace GPMS.Core.Setting
                 .ImplementedBy<UserRepository>()
                 .LifeStyle.PerWebRequest
                 );
+            //首页轮询
+            container.Register(
+               Component.For<ICarouselRepository>()
+               .ImplementedBy<CarouselRepository>()
+               .LifeStyle.PerWebRequest
+               );
+            //文件
+            container.Register(
+               Component.For<IFileInfoRepository>()
+               .ImplementedBy<FileInfoRepository>()
+               .LifeStyle.PerWebRequest
+               );
         }
 
         /// <summary>
@@ -65,6 +77,18 @@ namespace GPMS.Core.Setting
                     .ImplementedBy<UserService>()
                     .LifeStyle.PerWebRequest
                 );
+            //首页轮询
+            container.Register(
+               Component.For<ICarouselService>()
+                   .ImplementedBy<CarouselService>()
+                   .LifeStyle.PerWebRequest
+               );
+            //文件
+            container.Register(
+                Component.For<IFileInfoService>()
+                    .ImplementedBy<FileInfoService>()
+                    .LifeStyle.PerWebRequest
+                );  
         }
     }
 }

@@ -30,6 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ICarouselRepository.cs" />
+    <Compile Include="IFileInfoRepository.cs" />
     <Compile Include="IRepositoryBase.cs" />
     <Compile Include="ISystemConfigRepository.cs" />
     <Compile Include="IUserRepository.cs" />
