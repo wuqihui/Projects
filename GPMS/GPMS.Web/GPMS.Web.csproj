@@ -189,6 +189,7 @@
     <Compile Include="Controllers\CarouselController.cs" />
     <Compile Include="Controllers\FilesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Extensions\ActionResults\ImageResult.cs" />
     <Compile Include="Filters\AuthFilterAttributer.cs" />
     <Compile Include="Global.asax.cs">
@@ -272,6 +273,7 @@
     <Content Include="Views\Shared\_FooterPartial.cshtml" />
     <Content Include="Views\Carousel\Index.cshtml" />
     <Content Include="Views\Carousel\Show.cshtml" />
+    <Content Include="Views\Map\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GPMS.Core.Entities\GPMS.Core.Entities.csproj">
