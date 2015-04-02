@@ -23,6 +23,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Core.Setting", "GPMS.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Core.WebData", "GPMS.Core.WebData\GPMS.Core.WebData.csproj", "{0315E364-A3F4-4889-9AE4-E3104E49BF0F}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GPMS.ImageWeb(1)", "http://localhost:60793", "{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60793"
+		Debug.AspNetCompiler.PhysicalPath = "GPMS.ImageWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60793\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60793"
+		Release.AspNetCompiler.PhysicalPath = "GPMS.ImageWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60793\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "GPMS.ImageWeb\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +90,10 @@ Global
 		{0315E364-A3F4-4889-9AE4-E3104E49BF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0315E364-A3F4-4889-9AE4-E3104E49BF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0315E364-A3F4-4889-9AE4-E3104E49BF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
