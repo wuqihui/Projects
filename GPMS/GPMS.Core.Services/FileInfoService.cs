@@ -8,7 +8,7 @@ namespace GPMS.Core.Services
     {
         public FileInfoService(IFileInfoRepository fileInfoRepository)
         {
-            _repository = fileInfoRepository;
+            Repository = fileInfoRepository;
         }
     }
 }

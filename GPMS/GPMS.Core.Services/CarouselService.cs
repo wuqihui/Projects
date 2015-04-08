@@ -8,7 +8,7 @@ namespace GPMS.Core.Services
     {
         public CarouselService(ICarouselRepository carouselRepository)
         {
-            _repository = carouselRepository;
+            Repository = carouselRepository;
         }
     }
 }

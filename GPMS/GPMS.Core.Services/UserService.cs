@@ -9,7 +9,7 @@ namespace GPMS.Core.Services
         private readonly IUserRepository _userRepository;
         public UserService(IUserRepository userRepository)
         {
-            _repository = userRepository;
+            Repository = userRepository;
             _userRepository = userRepository;
         }
 

@@ -6,7 +6,7 @@ namespace GPMS.Core.Entities
     /// </summary>
     public class FileInfo
     {
-        public virtual long ID { get; set; }
+        public virtual long Id { get; set; }
         /// <summary>
         /// 文件类型，文档，图片
         /// </summary>

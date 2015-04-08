@@ -11,7 +11,7 @@
         @foreach (var item in Model)
         {
             <div class="item">
-                <img alt="" src="@string.Format("/Files/Image/{0}/{1}",(int)item.ImageObject.Filetype,item.ImageObject.ID)" />
+                <img alt="" src="@string.Format("/Files/Image/{0}/{1}",(int)item.ImageObject.Filetype,item.ImageObject.Id)" />
                 <div class="carousel-caption" contenteditable="true">
                     <h4>棒球</h4>
                     <p>@item.ImageObject.Description</p>

@@ -4,12 +4,13 @@ using GPMS.Core.IServices;
 
 namespace GPMS.Core.Services
 {
-    public class SystemConfigService : ServiceBase<SystemConfig>, ISystemConfigService
+    public abstract class SystemConfigService : ServiceBase<SystemConfig>, ISystemConfigService
     {
         private readonly ISystemConfigRepository _systemConfigRepository;
-        public SystemConfigService(ISystemConfigRepository systemConfigRepository)
+
+        protected SystemConfigService(ISystemConfigRepository systemConfigRepository)
         {
-            _repository = systemConfigRepository;
+            Repository = systemConfigRepository;
             _systemConfigRepository = systemConfigRepository;
         }
     }

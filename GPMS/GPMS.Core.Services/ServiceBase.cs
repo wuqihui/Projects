@@ -8,46 +8,46 @@ namespace GPMS.Core.Services
 {
     public class ServiceBase<T> : IServiceBase<T> where T : class
     {
-        protected IRepositoryBase<T> _repository;
+        protected IRepositoryBase<T> Repository;
 
         public long Save(T entity)
         {
-            return _repository.Save(entity);
+            return Repository.Save(entity);
         }
 
         public bool Update(T entity)
         {
-            return _repository.Update(entity);
+            return Repository.Update(entity);
         }
 
         public bool Delete(T entity)
         {
-            return _repository.Delete(entity);
+            return Repository.Delete(entity);
         }
 
         public bool Delete(long id)
         {
-            return _repository.Delete(id);
+            return Repository.Delete(id);
         }
 
-        public T GetEntityByID(long id)
+        public T GetEntityById(long id)
         {
-            return _repository.GetEntityByID(id);
+            return Repository.GetEntityByID(id);
         }
 
         public T GetEntityByAction(Expression<Func<T, bool>> func)
         {
-            return _repository.GetEntityByAction(func);
+            return Repository.GetEntityByAction(func);
         }
 
         public IList<T> FindAllEntityList()
         {
-            return _repository.FindAllEntityList();
+            return Repository.FindAllEntityList();
         }
 
         public IList<T> FindAllEntityListByAction(Expression<Func<T, bool>> func)
         {
-            return _repository.FindAllEntityListByAction(func);
+            return Repository.FindAllEntityListByAction(func);
         }
     }
 }

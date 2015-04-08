@@ -8,7 +8,7 @@ namespace GPMS.Core.Mapping
         public FileInfoMap()
         {
             Table("FileInfo");
-            Id(x => x.ID, "FileId").GeneratedBy.Identity();
+            Id(x => x.Id, "FileId").GeneratedBy.Identity();
             Map(x => x.Filetype, "FileTypeId").CustomType<Filetype>();
             Map(x => x.Description);
             Map(x => x.Src);
