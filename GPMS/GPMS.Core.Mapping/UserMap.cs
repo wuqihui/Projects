@@ -8,7 +8,7 @@ namespace GPMS.Core.Mapping
         public UserMap()
         {
             Table("UserInfo");
-            Id(x => x.ID, "UserId").GeneratedBy.Identity();
+            Id(x => x.Id, "UserId").GeneratedBy.Identity();
             Map(x => x.UserName);
             Map(x => x.Password);
             Map(x => x.Sex).CustomType<Sex>();
