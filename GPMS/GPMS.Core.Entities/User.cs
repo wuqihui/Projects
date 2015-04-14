@@ -4,7 +4,7 @@ namespace GPMS.Core.Entities
 {
     public class User
     {
-        public virtual long ID { get; set; }
+        public virtual long Id { get; set; }
         /// <summary>
         /// 登录用户名
         /// </summary>
