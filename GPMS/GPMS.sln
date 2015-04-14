@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Web", "GPMS.Web\GPMS.Web.csproj", "{40830AD8-F9AF-463B-AEE8-56E1A77EBC5B}"
 EndProject
@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Core.Setting", "GPMS.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Core.WebData", "GPMS.Core.WebData\GPMS.Core.WebData.csproj", "{0315E364-A3F4-4889-9AE4-E3104E49BF0F}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GPMS.ImageWeb(1)", "http://localhost:60793", "{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GPMS.ImageWeb", "http://localhost:60793", "{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
@@ -43,6 +43,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GPMS.ImageWeb(1)", "http://
 		Release.AspNetCompiler.Debug = "False"
 		SlnRelativePath = "GPMS.ImageWeb\"
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "数据访问层", "数据访问层", "{9CFE9095-39E2-4177-B611-3FA9D33B8D8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{863F0416-2CAA-42A8-BC3A-DD5ABED2AA56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Commnon.Utility", "GPMS.Commnon.Utility\GPMS.Commnon.Utility.csproj", "{0E1ED30F-F2A1-455B-B560-D64FFFFCA454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,8 +100,17 @@ Global
 		{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{E981AD45-4B2D-4129-8A1A-1F2A960B10BF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{0E1ED30F-F2A1-455B-B560-D64FFFFCA454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1ED30F-F2A1-455B-B560-D64FFFFCA454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1ED30F-F2A1-455B-B560-D64FFFFCA454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1ED30F-F2A1-455B-B560-D64FFFFCA454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{042092FF-6CF3-4848-B285-3F6FCEA62BFF} = {9CFE9095-39E2-4177-B611-3FA9D33B8D8C}
+		{688F1F2F-358E-488F-AA2B-CD6712FA51FB} = {9CFE9095-39E2-4177-B611-3FA9D33B8D8C}
+		{0E1ED30F-F2A1-455B-B560-D64FFFFCA454} = {863F0416-2CAA-42A8-BC3A-DD5ABED2AA56}
 	EndGlobalSection
 EndGlobal
