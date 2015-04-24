@@ -1,0 +1,41 @@
+﻿
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        @Html.ActionLink("首页", "Index", "Home")
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉菜单 <strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">下拉导航1</a></li>
+                            <li><a href="#">下拉导航2</a></li>
+                            <li><a href="#">其他</a></li>
+                            <li><a href="#">链接2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">下菜单 <strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">下拉导航1</a></li>
+                            <li><a href="#">下拉导航2</a></li>
+                            <li><a href="#">其他</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉菜单 <strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">下拉导航1</a></li>
+                            <li><a href="#">下拉导航2</a></li>
+                            <li><a href="#">其他</a></li>
+                            <li><a href="#">链接2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        @Html.ActionLink("简介", "About", "Home")
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right ">
+                    @Html.Partial("_LoginPartial")
+                </ul>
+            </div><!--/.nav-collapse -->
+      

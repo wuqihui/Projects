@@ -77,12 +77,6 @@
     <Compile Include="WebSecurity.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GPMS.Core.IServices\GPMS.Core.IServices.csproj">
-      <Project>{534B7783-04CF-45BA-8234-2560F6FFEF31}</Project>
-      <Name>GPMS.Core.IServices</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +84,20 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>WebDataResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\GPMS.Core.Entities\GPMS.Core.Entities.csproj">
+      <Project>{93e597d7-b8ec-4e10-8709-69d96c2abed4}</Project>
+      <Name>GPMS.Core.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\GPMS.Core.Setting\GPMS.Setting.csproj">
+      <Project>{8e163ffa-6ec1-440f-a67e-afad7f0c24e8}</Project>
+      <Name>GPMS.Setting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\GPMS.Core.IServices\GPMS.Core.IServices.csproj">
+      <Project>{534b7783-04cf-45ba-8234-2560f6ffef31}</Project>
+      <Name>GPMS.Core.IServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
