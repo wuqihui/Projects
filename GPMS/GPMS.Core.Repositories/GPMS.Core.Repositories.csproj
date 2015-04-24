@@ -38,10 +38,6 @@
     <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GPMS.Core.Entities\GPMS.Core.Entities.csproj">
-      <Project>{93e597d7-b8ec-4e10-8709-69d96c2abed4}</Project>
-      <Name>GPMS.Core.Entities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GPMS.Core.IRepositories\GPMS.Core.IRepositories.csproj">
       <Project>{042092ff-6cf3-4848-b285-3f6fcea62bff}</Project>
       <Name>GPMS.Core.IRepositories</Name>
