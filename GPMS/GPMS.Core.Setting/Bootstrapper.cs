@@ -6,7 +6,7 @@ using GPMS.Core.Repositories;
 using GPMS.Core.Services;
 using NHibernate;
 
-namespace GPMS.Core.Setting
+namespace GPMS.Setting
 {
     public class Bootstrapper
     {

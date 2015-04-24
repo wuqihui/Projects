@@ -85,9 +85,9 @@
       <Project>{534B7783-04CF-45BA-8234-2560F6FFEF31}</Project>
       <Name>GPMS.Core.IServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GPMS.Core.Setting\GPMS.Core.Setting.csproj">
+    <ProjectReference Include="..\GPMS.Core.Setting\GPMS.Setting.csproj">
       <Project>{8E163FFA-6EC1-440F-A67E-AFAD7F0C24E8}</Project>
-      <Name>GPMS.Core.Setting</Name>
+      <Name>GPMS.Setting</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

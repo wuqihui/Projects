@@ -1,8 +1,6 @@
-﻿using System.Diagnostics;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using GPMS.Core.Entities;
-using GPMS.Core.IServices;
-using GPMS.Core.Setting;
+using GPMS.Setting;
 using GPMS.Web.Extensions.ActionResults;
 
 namespace GPMS.Web.Controllers

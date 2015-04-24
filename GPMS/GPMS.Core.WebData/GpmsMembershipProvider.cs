@@ -6,7 +6,7 @@ using System.Web.Security;
 using System.Web.WebPages;
 using GPMS.Core.Entities;
 using GPMS.Core.IServices;
-using GPMS.Core.Setting;
+using GPMS.Setting;
 
 namespace GPMS.Core.WebData
 {

@@ -5,7 +5,7 @@ using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Context;
 
-namespace GPMS.Core.Setting
+namespace GPMS.Setting
 {
     public class Ioc
     {
@@ -23,7 +23,7 @@ namespace GPMS.Core.Setting
                 //配置数据库
                 .Database(config)
                 //指定需要映射的程序集
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Mapping.SystemConfigMap>())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<GPMS.Core.Mapping.SystemConfigMap>())
                 .CurrentSessionContext<WebSessionContext>()
                 //创建session工厂
                 .BuildSessionFactory();

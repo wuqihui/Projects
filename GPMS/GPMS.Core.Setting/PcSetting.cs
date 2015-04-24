@@ -1,5 +1,5 @@
 ﻿
-namespace GPMS.Core.Setting
+namespace GPMS.Setting
 {
     public class PcSetting
     {
