@@ -35,7 +35,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Web.Tests", "Test\GPMS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Web", "UI\GPMS.Web\GPMS.Web.csproj", "{40830AD8-F9AF-463B-AEE8-56E1A77EBC5B}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GPMS.ImageWeb(1)", "http://localhost:15556", "{4BC7C92E-9296-4411-99CB-24C11A060B3A}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GPMS.ImageWeb", "http://localhost:15556", "{4BC7C92E-9296-4411-99CB-24C11A060B3A}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
@@ -54,6 +54,13 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GPMS.ImageWeb(1)", "http://
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		SlnRelativePath = "UI\GPMS.ImageWeb\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D31809C2-48A8-45BE-B808-B3F4F13A9AB4}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global
