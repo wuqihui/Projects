@@ -123,7 +123,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GPMS.Web\GPMS.Web.csproj">
+    <ProjectReference Include="..\..\UI\GPMS.Web\GPMS.Web.csproj">
       <Project>{40830AD8-F9AF-463B-AEE8-56E1A77EBC5B}</Project>
       <Name>GPMS.Web</Name>
     </ProjectReference>
