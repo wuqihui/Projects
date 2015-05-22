@@ -1,12 +1,21 @@
-﻿using System;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="StringExtensions.cs" company="*">
+//      Copyright (c) 2014 OSharp. All rights reserved.
+//  </copyright>
+//  <last-editor>Keith.wu</last-editor>
+//  <last-date>2015-4-28 13:46</last-date>
+// -----------------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
-using GPMS.Commnon.Utility.Secutiry;
+using System.Text.RegularExpressions; 
 using Newtonsoft.Json;
+using GPMS.Commnon.Utility.Secutiry;
+
 
 namespace GPMS.Commnon.Utility.Extensions
 {
@@ -16,6 +25,7 @@ namespace GPMS.Commnon.Utility.Extensions
     public static class StringExtensions
     {
         #region 正则表达式
+
         /// <summary>
         /// 指示所指定的正则表达式在指定的输入字符串中是否找到了匹配项
         /// </summary>

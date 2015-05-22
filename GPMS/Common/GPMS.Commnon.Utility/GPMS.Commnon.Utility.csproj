@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\AssemblyExtensions.cs" />
+    <Compile Include="Extensions\BooleanExtensions.cs" />
     <Compile Include="Extensions\ParamterCheckExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
