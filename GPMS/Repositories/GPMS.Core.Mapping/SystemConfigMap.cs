@@ -8,7 +8,7 @@ namespace GPMS.Core.Mapping
         public SystemConfigMap()
         {
             Table("SystemConfig");
-            Id(x => x.ID).GeneratedBy.Identity();
+            Id(x => x.Id).GeneratedBy.Identity();
             Map(x => x.PasswordErrorCount);
             Map(x => x.PasswordErrorTimesapn);
 

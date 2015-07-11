@@ -1,12 +1,13 @@
 ﻿
+using System;
+
 namespace GPMS.Core.Entities
 {
     /// <summary>
     /// 文件信息，包括文档，图片
     /// </summary>
-    public class FileInfo
-    {
-        public virtual long Id { get; set; }
+    public  class AttachmentInfo:BaseEntity<Guid>
+    { 
         /// <summary>
         /// 文件类型，文档，图片
         /// </summary>

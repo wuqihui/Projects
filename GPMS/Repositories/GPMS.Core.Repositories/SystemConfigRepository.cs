@@ -4,7 +4,7 @@ using NHibernate;
 
 namespace GPMS.Core.Repositories
 {
-    public class SystemConfigRepository : RepositoryBase<SystemConfig>, ISystemConfigRepository
+    public class SystemConfigRepository : BaseRepository<SystemConfig,int>, ISystemConfigRepository
     {
         public SystemConfigRepository(ISession session)
         {

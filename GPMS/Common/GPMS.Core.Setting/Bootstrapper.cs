@@ -40,8 +40,8 @@ namespace GPMS.Setting
 
             //用户
             container.Register(
-                Component.For<IUserRepository>()
-                .ImplementedBy<UserRepository>()
+                Component.For<IUserBasicInfoRepository>()
+                .ImplementedBy<UserBasicInfoRepository>()
                 .LifeStyle.PerWebRequest
                 );
             //首页轮询
@@ -52,7 +52,7 @@ namespace GPMS.Setting
                );
             //文件
             container.Register(
-               Component.For<IFileInfoRepository>()
+               Component.For<IAttachmentInfoRepository>()
                .ImplementedBy<FileInfoRepository>()
                .LifeStyle.PerWebRequest
                );

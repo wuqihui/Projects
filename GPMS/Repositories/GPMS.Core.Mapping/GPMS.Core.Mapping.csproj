@@ -32,11 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BaseMap.cs" />
     <Compile Include="CarouselMap.cs" />
-    <Compile Include="FileInfoMap.cs" />
+    <Compile Include="AttachmentInfoMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemConfigMap.cs" />
-    <Compile Include="UserMap.cs" />
+    <Compile Include="UserBasicInfoMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FluentNHibernate, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">

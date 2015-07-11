@@ -4,6 +4,7 @@ using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Context;
+using NHibernate.Tool.hbm2ddl;
 
 namespace GPMS.Setting
 {
@@ -18,15 +19,13 @@ namespace GPMS.Setting
             Container = new WindsorContainer();
 
             var config = MsSqlConfiguration.MsSql2012.ConnectionString(c => c.FromConnectionStringWithKey("DefaultConnection"));
-            
+
             _sessionFactory = Fluently.Configure()
-                //配置数据库
-                .Database(config)
-                //指定需要映射的程序集
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<GPMS.Core.Mapping.SystemConfigMap>())
-                .CurrentSessionContext<WebSessionContext>()
-                //创建session工厂
-                .BuildSessionFactory();
+                .Database(config.ShowSql) //配置数据库
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<GPMS.Core.Mapping.SystemConfigMap>())//指定需要映射的程序集
+                .CurrentSessionContext<WebSessionContext>()//Session的容器
+                .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(true, true)) //配置生成数据库及表结构
+                .BuildSessionFactory();  //创建session工厂
         }
 
 

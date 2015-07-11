@@ -2,7 +2,7 @@
 
 namespace GPMS.Core.IServices
 {
-    public interface ISystemConfigService : IServiceBase<SystemConfig>
+    public interface ISystemConfigService : IServiceBase<SystemConfig,int>
     {
     }
 }

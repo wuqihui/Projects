@@ -1,19 +1,20 @@
-﻿using GPMS.Core.Entities;
+﻿using System;
+using GPMS.Core.Entities;
 using GPMS.Core.IRepositories;
 using GPMS.Core.IServices;
 
 namespace GPMS.Core.Services
 {
-    public class UserService : ServiceBase<User>, IUserService
+    public class UserService : ServiceBase<UserBasicInfo,Guid>, IUserService
     {
-        private readonly IUserRepository _userRepository;
-        public UserService(IUserRepository userRepository)
+        private readonly IUserBasicInfoRepository _userRepository;
+        public UserService(IUserBasicInfoRepository userRepository)
         {
             Repository = userRepository;
             _userRepository = userRepository;
         }
 
-        public User FindUserByName(string userName)
+        public UserBasicInfo FindUserByName(string userName)
         {
             return _userRepository.FindUserByName(userName);
         }

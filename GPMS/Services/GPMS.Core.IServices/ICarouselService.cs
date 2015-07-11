@@ -2,7 +2,7 @@
 
 namespace GPMS.Core.IServices
 {
-    public interface ICarouselService : IServiceBase<Carousel>
+    public interface ICarouselService : IServiceBase<Carousel,int>
     {
     }
 }

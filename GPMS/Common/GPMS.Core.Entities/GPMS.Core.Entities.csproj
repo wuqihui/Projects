@@ -32,10 +32,11 @@
   <ItemGroup>
     <Compile Include="Carousel.cs" />
     <Compile Include="CommonEnums.cs" />
-    <Compile Include="FileInfo.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="AttachmentInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemConfig.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="UserBasicInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

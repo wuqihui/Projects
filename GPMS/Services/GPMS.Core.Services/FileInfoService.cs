@@ -1,12 +1,13 @@
-﻿using GPMS.Core.Entities;
+﻿using System;
+using GPMS.Core.Entities;
 using GPMS.Core.IRepositories;
 using GPMS.Core.IServices;
 
 namespace GPMS.Core.Services
 {
-    public class FileInfoService : ServiceBase<FileInfo>, IFileInfoService
+    public class FileInfoService : ServiceBase<AttachmentInfo,Guid>, IFileInfoService
     {
-        public FileInfoService(IFileInfoRepository fileInfoRepository)
+        public FileInfoService(IAttachmentInfoRepository fileInfoRepository)
         {
             Repository = fileInfoRepository;
         }

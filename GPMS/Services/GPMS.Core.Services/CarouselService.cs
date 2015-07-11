@@ -4,7 +4,7 @@ using GPMS.Core.IServices;
 
 namespace GPMS.Core.Services
 {
-    public class CarouselService : ServiceBase<Carousel>, ICarouselService
+    public class CarouselService : ServiceBase<Carousel,int>, ICarouselService
     {
         public CarouselService(ICarouselRepository carouselRepository)
         {

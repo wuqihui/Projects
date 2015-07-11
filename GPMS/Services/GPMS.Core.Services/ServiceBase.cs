@@ -1,53 +1,59 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using GPMS.Core.Entities;
 using GPMS.Core.IRepositories;
 using GPMS.Core.IServices;
 
 namespace GPMS.Core.Services
 {
-    public class ServiceBase<T> : IServiceBase<T> where T : class
+    public class ServiceBase<TEntity, TPrimaryKey>:IServiceBase<TEntity,TPrimaryKey> where TEntity : BaseEntity<TPrimaryKey>
+        where TPrimaryKey : new()
     {
-        protected IRepositoryBase<T> Repository;
+        protected IBaseRepository<TEntity,TPrimaryKey> Repository;
 
-        public long Save(T entity)
+        public long Save(TEntity entity)
         {
             return Repository.Save(entity);
         }
 
-        public bool Update(T entity)
+        public bool Update(TEntity entity)
         {
             return Repository.Update(entity);
         }
+         
 
-        public bool Delete(T entity)
+        public TEntity GetEntityById(TPrimaryKey id)
         {
-            return Repository.Delete(entity);
+            return Repository.GetEntityById(id);
         }
 
-        public bool Delete(long id)
-        {
-            return Repository.Delete(id);
-        }
-
-        public T GetEntityById(long id)
-        {
-            return Repository.GetEntityByID(id);
-        }
-
-        public T GetEntityByAction(Expression<Func<T, bool>> func)
+        public TEntity GetEntityByAction(Expression<Func<TEntity, bool>> func)
         {
             return Repository.GetEntityByAction(func);
         }
 
-        public IList<T> FindAllEntityList()
+        public IList<TEntity> FindAllEntityList()
         {
             return Repository.FindAllEntityList();
         }
 
-        public IList<T> FindAllEntityListByAction(Expression<Func<T, bool>> func)
+        public IList<TEntity> FindAllEntityListByAction(Expression<Func<TEntity, bool>> func)
         {
             return Repository.FindAllEntityListByAction(func);
+        }
+
+
+
+
+        public bool Delete(TEntity entity, bool isPhysicsDelete = false)
+        {
+            return Repository.Delete(entity, isPhysicsDelete);
+        }
+
+        public bool Delete(TPrimaryKey id, bool isPhysicsDelete = false)
+        {
+            return Repository.Delete(id, isPhysicsDelete);
         }
     }
 }

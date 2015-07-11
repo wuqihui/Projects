@@ -20,7 +20,7 @@ namespace GPMS.Web.Controllers
             //var list = carouselService.FindAllEntityList();
             IList<Carousel> list=new Carousel[]
             {
-                new Carousel(){ImageObject =new FileInfo(){Filetype = Filetype.CarouselPicture,Description = "ss",Src = ""} }
+                new Carousel(){ImageObject =new AttachmentInfo(){Filetype = Filetype.CarouselPicture,Description = "ss",Src = ""} }
             };
             return PartialView(list);
         }

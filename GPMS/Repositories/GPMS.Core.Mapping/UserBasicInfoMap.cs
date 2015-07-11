@@ -3,9 +3,9 @@ using GPMS.Core.Entities;
 
 namespace GPMS.Core.Mapping
 {
-    public class UserMap : ClassMap<User>
+    public class UserBasicInfoMap : ClassMap<UserBasicInfo>
     {
-        public UserMap()
+        public UserBasicInfoMap()
         {
             Table("UserInfo");
             Id(x => x.Id, "UserId").GeneratedBy.Identity();
@@ -15,7 +15,7 @@ namespace GPMS.Core.Mapping
             Map(x => x.FirstName);
             Map(x => x.LastName);
             Map(x => x.EmailAddress);
-            Map(x => x.CreateDate);
+            Map(x => x.CreateTime);
             Map(x => x.IsConfirmed);
             Map(x => x.LastLoginSuccessedDateTime).Nullable();
             Map(x => x.PasswordFailuresSinceLastSuccess);

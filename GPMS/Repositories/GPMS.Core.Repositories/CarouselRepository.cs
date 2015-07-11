@@ -4,7 +4,7 @@ using NHibernate;
 
 namespace GPMS.Core.Repositories
 {
-    public class CarouselRepository : RepositoryBase<Carousel>, ICarouselRepository
+    public class CarouselRepository : BaseRepository<Carousel,int>, ICarouselRepository
     {
         public CarouselRepository(ISession session)
         {

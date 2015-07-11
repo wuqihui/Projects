@@ -1,14 +1,14 @@
-﻿using FluentNHibernate.Mapping;
+﻿using System;
+using FluentNHibernate.Mapping;
 using GPMS.Core.Entities;
 
 namespace GPMS.Core.Mapping
 {
-    public class FileInfoMap : ClassMap<FileInfo>
+    public class AttachmentInfoMap:BaseMap<AttachmentInfo,Guid>
     {
-        public FileInfoMap()
+        public AttachmentInfoMap():base()
         {
-            Table("FileInfo");
-            Id(x => x.Id, "FileId").GeneratedBy.Identity();
+            Table("AttachmentInfo"); 
             Map(x => x.Filetype, "FileTypeId").CustomType<Filetype>();
             Map(x => x.Description);
             Map(x => x.Src);

@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ICarouselRepository.cs" />
-    <Compile Include="IFileInfoRepository.cs" />
+    <Compile Include="IAttachmentInfoRepository.cs" />
     <Compile Include="IRepositoryBase.cs" />
     <Compile Include="ISystemConfigRepository.cs" />
-    <Compile Include="IUserRepository.cs" />
+    <Compile Include="IUserBasicInfoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

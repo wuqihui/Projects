@@ -1,9 +1,9 @@
 ﻿using System;
 using GPMS.Core.Entities;
 
-namespace GPMS.Core.IServices
+namespace GPMS.Core.IRepositories
 {
-    public interface IUserService : IServiceBase<UserBasicInfo,Guid>
+    public interface IUserBasicInfoRepository : IBaseRepository<UserBasicInfo, Guid>
     {
         UserBasicInfo FindUserByName(string userName);
     }

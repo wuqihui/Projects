@@ -83,7 +83,7 @@ namespace GPMS.Core.WebData
         /// <param name="user">用户</param>
         /// <param name="failReason"></param>
         /// <returns>结果</returns>
-        private bool VerifyUserIsAllowLogin(User user, ref string failReason)
+        private bool VerifyUserIsAllowLogin(UserBasicInfo user, ref string failReason)
         {
             if (user.IsConfirmed)
             {
@@ -116,7 +116,7 @@ namespace GPMS.Core.WebData
         /// <param name="password"></param>
         /// <param name="user"></param>
         /// <returns></returns>
-        private bool CheckPassword(string password, User user, ref string failReason)
+        private bool CheckPassword(string password, UserBasicInfo user, ref string failReason)
         {
             bool verificationSucceeded = (user.Password != null && Crypto.VerifyHashedPassword(user.Password, password));
             if (verificationSucceeded)
@@ -173,9 +173,9 @@ namespace GPMS.Core.WebData
                 var userByEamil = userService.GetEntityByAction(x => x.EmailAddress.Equals(email));
                 if (userByEamil == null)
                 {
-                    user = new User
+                    user = new UserBasicInfo
                     {
-                        CreateDate = DateTime.Now,
+                        CreateTime = DateTime.Now,
                         EmailAddress = email,
                         UserName = username,
                         Password = GetHashedPassword(password),

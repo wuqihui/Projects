@@ -3,7 +3,7 @@ using GPMS.Core.Entities;
 
 namespace GPMS.Core.Mapping
 {
-    public class CarouselMap : ClassMap<Carousel>
+    public class CarouselMap : BaseMap<Carousel, int>
     {
         public CarouselMap()
         {
