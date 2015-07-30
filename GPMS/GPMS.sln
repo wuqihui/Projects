@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Core.WebData", "GPMS.Core.WebData\GPMS.Core.WebData.csproj", "{0315E364-A3F4-4889-9AE4-E3104E49BF0F}"
 EndProject
@@ -63,6 +63,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D31809
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPMS.Manager", "GPMS.Manager\GPMS.Manager.csproj", "{FFE89575-67AF-4629-B52E-D930594B820A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{4BC7C92E-9296-4411-99CB-24C11A060B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BC7C92E-9296-4411-99CB-24C11A060B3A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BC7C92E-9296-4411-99CB-24C11A060B3A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{FFE89575-67AF-4629-B52E-D930594B820A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE89575-67AF-4629-B52E-D930594B820A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE89575-67AF-4629-B52E-D930594B820A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE89575-67AF-4629-B52E-D930594B820A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,5 +139,6 @@ Global
 		{408C7226-7CD3-4CD4-A544-5DA071C8EF72} = {DDD6A24E-0A78-4A8A-BDD5-D534AECF725F}
 		{40830AD8-F9AF-463B-AEE8-56E1A77EBC5B} = {0034A781-A24E-4F6C-8066-20B8DD8243E6}
 		{4BC7C92E-9296-4411-99CB-24C11A060B3A} = {0034A781-A24E-4F6C-8066-20B8DD8243E6}
+		{FFE89575-67AF-4629-B52E-D930594B820A} = {0034A781-A24E-4F6C-8066-20B8DD8243E6}
 	EndGlobalSection
 EndGlobal

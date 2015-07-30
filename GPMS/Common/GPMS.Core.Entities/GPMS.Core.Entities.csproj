@@ -30,10 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AdvertisementInfo.cs" />
     <Compile Include="Carousel.cs" />
     <Compile Include="CommonEnums.cs" />
     <Compile Include="BaseEntity.cs" />
     <Compile Include="AttachmentInfo.cs" />
+    <Compile Include="Enums\AdvertisementTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemConfig.cs" />
     <Compile Include="UserBasicInfo.cs" />
