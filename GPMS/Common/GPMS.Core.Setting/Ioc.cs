@@ -24,7 +24,9 @@ namespace GPMS.Setting
                 .Database(config.ShowSql) //配置数据库
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<GPMS.Core.Mapping.SystemConfigMap>())//指定需要映射的程序集
                 .CurrentSessionContext<WebSessionContext>()//Session的容器
-                .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(true, true)) //配置生成数据库及表结构
+                .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(true, false)) //配置生成数据库及表结构
+                //第一个参数bool script指定是否生成数据库脚本  
+                //第二个参数bool export指定每次生成的数据库的创建脚本是否执行  
                 .BuildSessionFactory();  //创建session工厂
         }
 
