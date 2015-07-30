@@ -17,19 +17,19 @@ namespace GPMS.Core.Entities
         /// <summary>
         /// 获取或设置实体唯一标识，主键
         /// </summary>
-        public TPrimaryKey Id { get; set; }
+        public virtual TPrimaryKey Id { get; set; }
         /// <summary>
         /// 获取或设置 是否删除，逻辑上的删除，非物理的删除
         /// </summary>
-        public bool IsDeleted { get; set; }
+        public virtual bool IsDeleted { get; set; }
         /// <summary>
         /// 获取或设置 创建时间
         /// </summary>
-        public DateTime CreateTime { get; set; }
+        public virtual DateTime CreateTime { get; set; }
         /// <summary>
         /// 获取或设置 版本控制标识，用于处理并发
         /// </summary>
-        public long Timestamp { get; set; }
+        public virtual long Timestamp { get; set; }
 
         #endregion
 

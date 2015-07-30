@@ -1,14 +1,14 @@
-﻿using FluentNHibernate.Mapping;
+﻿using System;
+using FluentNHibernate.Mapping;
 using GPMS.Core.Entities;
 
 namespace GPMS.Core.Mapping
 {
-    public class UserBasicInfoMap : ClassMap<UserBasicInfo>
+    public class UserBasicInfoMap : BaseMap<UserBasicInfo, Guid>
     {
         public UserBasicInfoMap()
         {
             Table("UserInfo");
-            Id(x => x.Id, "UserId").GeneratedBy.Identity();
             Map(x => x.UserName);
             Map(x => x.Password);
             Map(x => x.Sex).CustomType<Sex>();

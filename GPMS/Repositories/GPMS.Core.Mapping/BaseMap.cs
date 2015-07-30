@@ -12,7 +12,16 @@ namespace GPMS.Core.Mapping
     {
         protected BaseMap()
         {
-            Id(x => x.Id, "Id").GeneratedBy.Identity();
+            var idType = typeof(TPrimaryKey);
+            if (idType.FullName.ToLower().Equals("system.guid"))
+            {
+                Id(x => x.Id, "Id").GeneratedBy.Assigned();
+            }
+            else
+            {
+                Id(x => x.Id, "Id").GeneratedBy.Identity();
+            }
+
         }
 
 
