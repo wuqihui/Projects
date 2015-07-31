@@ -9,6 +9,21 @@ namespace GPMS.Setting
         {
         }
 
+        public static string CookieDomain
+        {
+            get { return string.Format(System.Configuration.ConfigurationManager.AppSettings["CookieDomain"]); }
+        }
+
+        public static string PortalWebsiteUrl
+        {
+            get { return string.Format(System.Configuration.ConfigurationManager.AppSettings["PortalWebsiteUrl"]); }
+        }
+
+        public static string ImageWebsiteUrl
+        {
+            get { return string.Format(System.Configuration.ConfigurationManager.AppSettings[""]); }
+        }
+
         public static string CarouselBasePath
         {
             get { return string.Format(System.Configuration.ConfigurationManager.AppSettings["carouselBasePath"]); }

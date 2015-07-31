@@ -41,7 +41,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NHibernate.4.0.3.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -304,7 +320,28 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\GPMS.Commnon.Utility\GPMS.Commnon.Utility.csproj">
+      <Project>{0e1ed30f-f2a1-455b-b560-d64ffffca454}</Project>
+      <Name>GPMS.Commnon.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\GPMS.Core.Entities\GPMS.Core.Entities.csproj">
+      <Project>{93e597d7-b8ec-4e10-8709-69d96c2abed4}</Project>
+      <Name>GPMS.Core.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\GPMS.Core.Setting\GPMS.Setting.csproj">
+      <Project>{8e163ffa-6ec1-440f-a67e-afad7f0c24e8}</Project>
+      <Name>GPMS.Setting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Repositories\GPMS.Core.IRepositories\GPMS.Core.IRepositories.csproj">
+      <Project>{042092ff-6cf3-4848-b285-3f6fcea62bff}</Project>
+      <Name>GPMS.Core.IRepositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\GPMS.Core.IServices\GPMS.Core.IServices.csproj">
+      <Project>{534b7783-04cf-45ba-8234-2560f6ffef31}</Project>
+      <Name>GPMS.Core.IServices</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
