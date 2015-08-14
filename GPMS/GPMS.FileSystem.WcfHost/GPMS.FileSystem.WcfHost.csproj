@@ -59,6 +59,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Files\WaterMark.png" />
     <Content Include="UploadFileService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -79,6 +80,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\GPMS.Commnon.Utility\GPMS.Commnon.Utility.csproj">
+      <Project>{0e1ed30f-f2a1-455b-b560-d64ffffca454}</Project>
+      <Name>GPMS.Commnon.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
