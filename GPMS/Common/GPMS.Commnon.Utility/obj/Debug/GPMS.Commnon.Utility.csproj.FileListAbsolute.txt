@@ -1,0 +1,9 @@
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\bin\Debug\GPMS.Commnon.Utility.dll
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\bin\Debug\GPMS.Commnon.Utility.pdb
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\obj\Debug\GPMS.Commnon.Utility.csprojResolveAssemblyReference.cache
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\obj\Debug\GPMS.Commnon.Utility.Properties.Resources.resources
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\obj\Debug\GPMS.Commnon.Utility.csproj.GenerateResource.Cache
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\obj\Debug\GPMS.Commnon.Utility.dll
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Commnon.Utility\obj\Debug\GPMS.Commnon.Utility.pdb

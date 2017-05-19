@@ -1,0 +1,7 @@
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.IRepositories\bin\Debug\GPMS.Core.IRepositories.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.IRepositories\bin\Debug\GPMS.Core.IRepositories.pdb
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.IRepositories\bin\Debug\GPMS.Core.Entities.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.IRepositories\bin\Debug\GPMS.Core.Entities.pdb
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.IRepositories\obj\Debug\GPMS.Core.IRepositories.csprojResolveAssemblyReference.cache
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.IRepositories\obj\Debug\GPMS.Core.IRepositories.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.IRepositories\obj\Debug\GPMS.Core.IRepositories.pdb

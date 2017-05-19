@@ -1,0 +1,11 @@
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\bin\Debug\GPMS.Core.Services.dll
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\bin\Debug\GPMS.Core.Services.pdb
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\bin\Debug\GPMS.Core.Entities.dll
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\bin\Debug\GPMS.Core.IRepositories.dll
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\bin\Debug\GPMS.Core.IServices.dll
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\bin\Debug\GPMS.Core.Entities.pdb
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\bin\Debug\GPMS.Core.IRepositories.pdb
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\bin\Debug\GPMS.Core.IServices.pdb
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\obj\Debug\GPMS.Core.Services.csprojResolveAssemblyReference.cache
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\obj\Debug\GPMS.Core.Services.dll
+D:\Projects\GitProjects\Projects\GPMS\Services\GPMS.Core.Services\obj\Debug\GPMS.Core.Services.pdb

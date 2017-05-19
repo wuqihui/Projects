@@ -1,0 +1,13 @@
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\GPMS.Core.Mapping.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\GPMS.Core.Mapping.pdb
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\FluentNHibernate.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\GPMS.Core.Entities.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\Iesi.Collections.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\NHibernate.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\GPMS.Core.Entities.pdb
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\FluentNHibernate.xml
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\Iesi.Collections.xml
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\bin\Debug\NHibernate.xml
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\obj\Debug\GPMS.Core.Mapping.csprojResolveAssemblyReference.cache
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\obj\Debug\GPMS.Core.Mapping.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Mapping\obj\Debug\GPMS.Core.Mapping.pdb

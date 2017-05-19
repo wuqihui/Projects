@@ -1,0 +1,13 @@
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\GPMS.Core.Repositories.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\GPMS.Core.Repositories.pdb
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\GPMS.Core.Entities.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\GPMS.Core.IRepositories.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\Iesi.Collections.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\NHibernate.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\GPMS.Core.Entities.pdb
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\GPMS.Core.IRepositories.pdb
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\Iesi.Collections.xml
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\bin\Debug\NHibernate.xml
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\obj\Debug\GPMS.Core.Repositories.csprojResolveAssemblyReference.cache
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\obj\Debug\GPMS.Core.Repositories.dll
+D:\Projects\GitProjects\Projects\GPMS\Repositories\GPMS.Core.Repositories\obj\Debug\GPMS.Core.Repositories.pdb

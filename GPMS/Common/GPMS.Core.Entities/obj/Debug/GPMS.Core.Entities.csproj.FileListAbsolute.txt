@@ -1,0 +1,4 @@
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Core.Entities\bin\Debug\GPMS.Core.Entities.dll
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Core.Entities\bin\Debug\GPMS.Core.Entities.pdb
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Core.Entities\obj\Debug\GPMS.Core.Entities.dll
+D:\Projects\GitProjects\Projects\GPMS\Common\GPMS.Core.Entities\obj\Debug\GPMS.Core.Entities.pdb
